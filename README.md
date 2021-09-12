@@ -30,6 +30,7 @@ With this data you can align any NGS reads or proteomics data using [**Diamond**
 # STEP 1. Download UniProt and UniRef
 The UniProt-UniRef databases are quite nice as a base. Unfortunately they do not directly link to reactions, compounds, and pathways in a helpful way. Using their Kegg genes, Rhea IDs, and BioCyc monomer IDs, all proteins can be linked with both their compounds and reactions through the 
 ### General Annotations:
+wget -O uniprot-all_6-16-21.tab.gz 'https://www.uniprot.org/uniprot/?query=*&format=tab&force=true&columns=id,protein%20names,length,lineage-id,lineage(GENUS),lineage(SPECIES),organism,feature(SIGNAL),feature(TRANSMEMBRANE),database(TCDB),database(eggNOG),database(Pfam),database(TIGRFAMs),go-id,database(InterPro),ec,database(BioCyc),feature(DNA%20BINDING),feature(METAL%20BINDING),comment(SUBCELLULAR%20LOCATION),database(KEGG),rhea-id&compress=yes'
 Sorry, you have to do this MANUALLY.<br>
 Go to UniProt, do an empty search, select edit columns, search/select the following IN THIS ORDER!:
  -  Entry
