@@ -1,4 +1,4 @@
-# UMRAD: Universal Microbiomics Reference and Alignment Database
+# UMRAD: Universal Multiomics Reference and Alignment Database
 This script compiles the data from databases 1-3 below, plus functional information from UniProt and other public databases, to annotate the UniRef100 set of deduplicated proteins. Collectively these annotations enable the unification of various meta-omics studies: metabolomes, metaproteomes, metatranscriptomes, and metagenomes. This is #4 of a series of pipelines that comprise this Universal Reference for various 'omics data analysis.
     <br>1. Universal Taxonomy Database: [found here](https://github.com/TealFurnholm/Universal-Taxonomy-Database)
     <br>2. Universal Compounds Database: [found here](https://github.com/TealFurnholm/Universal_Biological_Compounds_Database)
