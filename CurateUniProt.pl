@@ -25,7 +25,7 @@ qx{wget -N https://www.tcdb.org/cgi-bin/substrates/getSubstrates.py};
 $inupr = 'all_upid_rxns_'.$month.'_'.$year.'.txt';      if(!-s $inupr){ print "missing $inupr - please place into this folder and restart\n"; $fail=1;}
 $inkeg = 'all_kegg_rxns_'.$month.'_'.$year.'.txt';      if(!-s $inkeg ){print "missing $inkeg - please place into this folder and restart\n"; $fail=1;}
 $inecs = 'all_ec_rxns_'.$month.'_'.$year.'.txt';        if(!-s $inecs ){print "missing $inecs - please place into this folder and restart\n"; $fail=1;}
-$intax = 'TAXONOMY_DB_'.$year.'.txt';                   if(!-s $intax ){print "missing $intax - please place into this folder and restart\n"; $fail=1;}
+$intax = 'TAXONOMY_DB_'.$month.'_'.$year.'.txt';        if(!-s $intax ){print "missing $intax - please place into this folder and restart\n"; $fail=1;}
 $inmon = 'all_mono_rxns_'.$month.'_'.$year.'.txt';      if(!-s $inmon ){print "missing $inmon - please place into this folder and restart\n"; $fail=1;}
 $inup  = 'uniprot-all.tab.gz';                          if(!-s $inup ){ print "missing $inup - please place into this folder and restart\n";  $fail=1;}
 if($fail==1){
